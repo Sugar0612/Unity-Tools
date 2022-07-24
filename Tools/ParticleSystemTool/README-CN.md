@@ -30,9 +30,9 @@ ParticleSystem Tool 可以帮助开发者解决屏幕映射面积的问题.
 private void SearchParticleSystemInChildren(ParticleSystem PtcS)  
 {
     var PtcSysArray = PtcS.GetComponentsInChildren<ParticleSystem>();
-    如果（PtcSysArray.Length == 0）返回；
+    if（PtcSysArray.Length == 0) return;
 
-    foreach（PtcSysArray 中的变量 p）
+    foreach（var p in PtcSysArray）
     {
         if (p != null && list_Ptcsyses.Contains(p) == false)
         {
