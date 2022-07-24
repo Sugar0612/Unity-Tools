@@ -26,7 +26,7 @@ ParticleSystem Tool 可以帮助开发者解决屏幕映射面积的问题.
 ##递归获取粒子系统中的子系统  
 因为一个粒子系统可能有多层子粒子系统，所以需要递归。  
 
-```
+```cs
 private void SearchParticleSystemInChildren(ParticleSystem PtcS)  
 {
     var PtcSysArray = PtcS.GetComponentsInChildren<ParticleSystem>();
@@ -46,7 +46,7 @@ private void SearchParticleSystemInChildren(ParticleSystem PtcS)
 ## 获取 renderer 模式
 渲染模式需要逐层调用底层api。  
 
-```  
+```cs
 var render = p.GetComponent<Renderer>();
 sysRender = render.GetComponent<ParticleSystemRenderer>();
 mode = sysRender.renderMode;  
@@ -55,7 +55,7 @@ mode = sysRender.renderMode;
 
 ## 获取粒子  
 
-```  
+```cs  
 private void GetParticles()  
 {
     int length = Ptcsys.main.maxParticles;
@@ -72,7 +72,7 @@ private void GetParticles()
 只需要得到粒子的位置和当前帧的粒子大小，最后以该位置为中心构建一个正方形，并计算面积。  
 
 获取当前帧粒子的大小  
-```
+```cs
 var size3d = particles[i].GetCurrentSize(Ptcsys);
 ```  
 
@@ -85,5 +85,6 @@ var size3d = particles[i].GetCurrentSize(Ptcsys);
 所以 ParticleSystemTool 通过两个条件限制了新点进出 obj 来解决这个问题。  
 - 在凸包内  
 - 屏幕内  
+
 添加点后，再次执行凸包算法计算面积。  
 有关详细信息，请参见 Particle.cs 文件中的 `Particle.ParticleSystem_Tools.ParticleSys_Mesh` 类。  
