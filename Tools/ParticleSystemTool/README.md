@@ -66,7 +66,7 @@ private void GetParticles()
     Ptcsys.GetParticles(particles);
 }  
 
-```cs  
+``` 
 ## calculate area  
 
 ### Billboard mode  
@@ -74,6 +74,7 @@ In billboard rendering mode.
 because the particle is a 2d, you only need to get the position of the particle and the particle size of the current frame, and finally build a square with the position as the center, and calculate the area.  
 
 Get the size of the current frame particle  
+
 ```cs
 var size3d = particles[i].GetCurrentSize(Ptcsys);  
 ```  
