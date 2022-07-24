@@ -1,5 +1,5 @@
 # Language  
-[中文简体](./Tools/ParticleSystemTool/README-CN.md)
+[中文简体](.//README-CN.md)
 
 # ParticleSystem Tool  
 ParticleSystem Tool can help developers solve the problem of screen mapping area.  
