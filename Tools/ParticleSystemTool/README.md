@@ -1,5 +1,5 @@
 # Language  
-[¼òÌåÖÐÎÄ](.Tools/ParticleSystemTool/README-CN.md)
+[ä¸­æ–‡ç®€ä½“](.Tools/ParticleSystemTool/README-CN.md)
 
 # ParticleSystem Tool  
 ParticleSystem Tool can help developers solve the problem of screen mapping area.  
@@ -10,6 +10,7 @@ It can display the total screen mapped area of the
 - along with the average area over the total number of frames.  
 - the total number of particles in the screen.  
 - the average particle count over the total number of frames.  
+
 It supports both Billboard and Mesh rendering modes.  
 Of course You can also dynamically develop it to display the maximum screen projection area and maximum number of particles of the current frame, all with interfaces.  
 
@@ -21,14 +22,14 @@ just drag `ParticleWindow.cs` to the Editor file of the project, drag `Particle.
 ## Get particle system  
 Get the ParticlesSystem by dragging and dropping in UnityEditor, but the type is GameObject.  
 
-cs```  
+```  
  var Ptcsys = objs[i].GetComponent<ParticleSystem>();  
 ```  
 
 ## Get the particle system neutron particle system recursively,  
 Because it is possible for a particle system to have multiple layers of child particle systems, recursion is required.  
 
-cs```  
+```  
 private void SearchParticleSystemInChildren(ParticleSystem PtcS)  
 {
     var PtcSysArray = PtcS.GetComponentsInChildren<ParticleSystem>();
@@ -48,7 +49,7 @@ private void SearchParticleSystemInChildren(ParticleSystem PtcS)
 ##  Get the rnenderer mode  
 The rendering mode needs to call the underlying api layer by layer.
 
-cs```  
+```  
 var render = p.GetComponent<Renderer>();
 sysRender = render.GetComponent<ParticleSystemRenderer>();
 mode = sysRender.renderMode;  
@@ -57,7 +58,7 @@ mode = sysRender.renderMode;
 
 ## get particle  
 
-cs```  
+```  
 private void GetParticles()  
 {
     int length = Ptcsys.main.maxParticles;
@@ -74,7 +75,7 @@ In billboard rendering mode.
 because the particle is a 2d, you only need to get the position of the particle and the particle size of the current frame, and finally build a square with the position as the center, and calculate the area.  
 
 Get the size of the current frame particle  
-cs```
+```
 var size3d = particles[i].GetCurrentSize(Ptcsys);
 
 ```  
