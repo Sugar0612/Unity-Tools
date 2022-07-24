@@ -67,8 +67,7 @@ private void GetParticles()
 }  
 
 ```  
-
-##calculate area  
+## calculate area  
 
 ### Billboard mode  
 In billboard rendering mode.  
@@ -76,8 +75,7 @@ because the particle is a 2d, you only need to get the position of the particle 
 
 Get the size of the current frame particle  
 ```
-var size3d = particles[i].GetCurrentSize(Ptcsys);
-
+var size3d = particles[i].GetCurrentSize(Ptcsys);  
 ```  
 
 ### Mesh mode  
