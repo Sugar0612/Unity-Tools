@@ -22,14 +22,14 @@ just drag `ParticleWindow.cs` to the Editor file of the project, drag `Particle.
 ## Get particle system  
 Get the ParticlesSystem by dragging and dropping in UnityEditor, but the type is GameObject.  
 
-```  
+```cs  
  var Ptcsys = objs[i].GetComponent<ParticleSystem>();  
 ```  
 
 ## Get the particle system neutron particle system recursively,  
 Because it is possible for a particle system to have multiple layers of child particle systems, recursion is required.  
 
-```  
+```cs  
 private void SearchParticleSystemInChildren(ParticleSystem PtcS)  
 {
     var PtcSysArray = PtcS.GetComponentsInChildren<ParticleSystem>();
@@ -49,7 +49,7 @@ private void SearchParticleSystemInChildren(ParticleSystem PtcS)
 ##  Get the rnenderer mode  
 The rendering mode needs to call the underlying api layer by layer.
 
-```  
+```cs  
 var render = p.GetComponent<Renderer>();
 sysRender = render.GetComponent<ParticleSystemRenderer>();
 mode = sysRender.renderMode;  
@@ -58,7 +58,7 @@ mode = sysRender.renderMode;
 
 ## get particle  
 
-```  
+```cs  
 private void GetParticles()  
 {
     int length = Ptcsys.main.maxParticles;
@@ -66,7 +66,7 @@ private void GetParticles()
     Ptcsys.GetParticles(particles);
 }  
 
-```  
+```cs  
 ## calculate area  
 
 ### Billboard mode  
@@ -74,7 +74,7 @@ In billboard rendering mode.
 because the particle is a 2d, you only need to get the position of the particle and the particle size of the current frame, and finally build a square with the position as the center, and calculate the area.  
 
 Get the size of the current frame particle  
-```
+```cs
 var size3d = particles[i].GetCurrentSize(Ptcsys);  
 ```  
 
@@ -87,5 +87,6 @@ When the number of vertices on obj is small, we cannot accurately calculate the 
 So ParticleSystemTool solves this problem by limiting the addition of new points to and from obj through two conditions.  
 - within the convex hull  
 - within the screen  
+
 After adding points, perform the convex hull algorithm again to calculate the area.  
 For details, see the `Particle.ParticleSystem_Tools.ParticleSys_Mesh` class in Particle.cs file.
