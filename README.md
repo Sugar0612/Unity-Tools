@@ -1,11 +1,13 @@
 # Unity Tools  
-English | [¼òÌåÖÐÎÄ](./README-CN.md)  
+English | [ç®€ä½“ä¸­æ–‡](./README-CN.md)  
 Unity Tools can be a tool script embedded in unityEditor, allowing Unity to develop Unity games more efficiently.  
 # For Testing  
 clone via git using  
+
     git clone git@github.com:Sugar0612/Unity_Tools.git  
 
 or from GitHub mirror using  
+
     git clone https://github.com/Sugar0612/Unity_Tools.git  
 
 # Unity compiler version  

@@ -1,17 +1,19 @@
-# Unity¹¤¾ß   
-¼òÌåÖĞÎÄ | [English](./README.md)  
-Unity Tools ¿ÉÒÔÊÇÇ¶ÈëÔÚunityEditorµÄ¹¤¾ß½Å±¾, ÈÃUnity¸ü¼Ó¸ßĞ§ÂÊµÄ¿ª·¢UnityÓÎÏ·.  
-# ²âÊÔºÍÊ¹ÓÃ  
-Í¨¹ı git ¿ËÂ¡Ê¹ÓÃ   
+# Unityå·¥å…·   
+ç®€ä½“ä¸­æ–‡ | [English](./README.md)  
+Unity Tools å¯ä»¥æ˜¯åµŒå…¥åœ¨unityEditorçš„å·¥å…·è„šæœ¬, è®©Unityæ›´åŠ é«˜æ•ˆç‡çš„å¼€å‘Unityæ¸¸æˆ.  
+# æµ‹è¯•å’Œä½¿ç”¨  
+é€šè¿‡ git å…‹éš†ä½¿ç”¨   
+
     git clone git@github.com:Sugar0612/Unity_Tools.git  
 
-»ò´Ó GitHub ¾µÏñÊ¹ÓÃ  
+æˆ–ä» GitHub é•œåƒä½¿ç”¨  
+
     git clone https://github.com/Sugar0612/Unity_Tools.git  
 
-# Unity±àÒëÆ÷°æ±¾  
-¿ª·¢Ê¹ÓÃµÄÊÇ Unity±àÒëÆ÷ `2019.4.40f1c1` °æ±¾.  
-Èç¹ûĞÂ°æ±¾·¢ÏÖÊ¹ÓÃ´íÎó, ĞèÒªÊ¹ÓÃĞ¡ÓÚµÈÓÚ `2019.4.40f1c1` Unity±àÒëÆ÷.  
+# Unityç¼–è¯‘å™¨ç‰ˆæœ¬  
+å¼€å‘ä½¿ç”¨çš„æ˜¯ Unityç¼–è¯‘å™¨ `2019.4.40f1c1` ç‰ˆæœ¬.  
+å¦‚æœæ–°ç‰ˆæœ¬å‘ç°ä½¿ç”¨é”™è¯¯, éœ€è¦ä½¿ç”¨å°äºç­‰äº `2019.4.40f1c1` Unityç¼–è¯‘å™¨.  
 
-# Ä¿Â¼  
-- [¹¤¾ß](./Tools)  
-  - [Á£×ÓÏµÍ³¹¤¾ß](./Tools/ParticleSystemTool)  
+# ç›®å½•  
+- [å·¥å…·](./Tools)  
+  - [ç²’å­ç³»ç»Ÿå·¥å…·](./Tools/ParticleSystemTool)  
