@@ -1,7 +1,7 @@
 # Unity工具   
 简体中文 | [English](./README.md)  
 Unity Tools 可以是嵌入在unityEditor的工具脚本, 让Unity更加高效率的开发Unity游戏.  
-<img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/particlesystem.gif" width="400" alt="particleSystem">  
+<img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/particlesystem.gif" width="600" alt="particleSystem">  
 
 # 测试和使用  
 通过 git 克隆使用   

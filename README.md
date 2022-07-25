@@ -1,7 +1,7 @@
 # Unity Tools  
 English | [简体中文](./README-CN.md)  
 Unity Tools can be a tool script embedded in unityEditor, allowing Unity to develop Unity games more efficiently.  
-<img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/particlesystem.gif" width="400" alt="particleSystem">  
+<img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/particlesystem.gif" width="600" alt="particleSystem">  
 
 # For Testing  
 clone via git using  
