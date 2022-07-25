@@ -23,7 +23,7 @@ ParticleSystem Tool 可以帮助开发者解决屏幕映射面积的问题.
  var Ptcsys = objs[i].GetComponent<ParticleSystem>();
 ```
 
-##递归获取粒子系统中的子系统  
+## 递归获取粒子系统中的子系统  
 因为一个粒子系统可能有多层子粒子系统，所以需要递归。  
 
 ```cs
