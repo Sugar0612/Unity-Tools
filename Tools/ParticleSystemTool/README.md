@@ -1,4 +1,4 @@
-<img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/particlesystem.gif" width="700" alt="particleSystem">  
+<img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/usingPtc.png" width="1000" height="300" alt="particleSystem"> <img src = "https://raw.githubusercontent.com/Sugar0612/Unity-Tools/master/Tools/ParticleSystemTool/image/resPtc.png" width="1000" height="300" alt="particleSystem">  
 
 # Language  
 
